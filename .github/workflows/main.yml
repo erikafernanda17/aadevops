@@ -1,0 +1,12 @@
+name: Exemplo de Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2  # Ação padrão para realizar checkout do repositório
+    - name: Print a mensagem
+      run: echo Olá, GitHub Actions!
